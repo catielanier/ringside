@@ -33,7 +33,49 @@ type superstar = struct {
 	DrawSize           int
 	Alignment          alignment
 	SecondaryAlignment secondaryAlignment
+	EugeneMode         bool
+	NonUniqueLimit     int
+	UniqueLimit        int
 	CardText           string
+}
+
+type arsenalCardType int
+
+const (
+	Maneuver arsenalCardType = iota
+	Action
+	Antic
+	Reversal
+)
+
+type brand int
+
+const (
+	Raw brand = iota
+	Smackdown
+	NoBrand
+)
+
+type arsenalCard struct {
+	Title              string
+	IsRevolution       bool
+	IsThrowback        bool
+	IsSurvivorSeries   bool
+	IsForeignObject    bool
+	IsChain            bool
+	IsHeat             bool
+	IsRMS              bool
+	IsUnique           bool
+	IsActive           bool
+	Brand              brand
+	Alignment          alignment
+	SecondaryAlignment secondaryAlignment
+	SuperstarSpecific  string
+	Volley             int
+	StunValue          int
+	CardType           []arsenalCardType
+	ManeuverCardType   []maneuverCardType
+	ManeuverSubType    maneuverSubType
 }
 
 type backstageArea []string
@@ -42,11 +84,20 @@ type backlashDeck []string
 
 type arsenal []string
 
+type deckType int
+
+const (
+	Classic deckType = iota
+	Virtual
+	Revolution
+)
+
 type deck struct {
 	Superstar     superstar
 	BackstageArea backstageArea
 	BacklashDeck  backlashDeck
 	Arsenal       arsenal
+	DeckType      deckType
 }
 
 func newArsenal() arsenal {
