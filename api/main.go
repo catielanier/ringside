@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/catielanier/ringside/cards"
 	"github.com/catielanier/ringside/cards/global"
+	"github.com/catielanier/ringside/configs"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 	"log"
@@ -52,6 +53,8 @@ func main() {
 	}
 
 	router := gin.Default()
+
+	configs.ConnectDB()
 
 	router.Run(apiURI)
 }
