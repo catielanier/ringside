@@ -4,9 +4,18 @@ import (
 	"fmt"
 	"github.com/catielanier/ringside/cards"
 	"github.com/catielanier/ringside/cards/global"
+	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
+	"log"
+	"os"
 )
 
 func main() {
+	err := godotenv.Load()
+	if err != nil {
+		log.Fatal("Error loading .env file")
+	}
+	apiURI := os.Getenv("API_URI")
 	deck := deck{
 		Superstar: cards.Superstar{
 			Name:               "Mankind",
@@ -26,7 +35,7 @@ func main() {
 		},
 		BackstageArea: []cards.Backstage{},
 		BacklashDeck:  []cards.Backlash{},
-		Arsenal:       []cards.Arsenal{},
+		Arsenal:       arsenal{},
 		DeckType:      Virtual,
 	}
 	deck.Arsenal.shuffle()
@@ -41,4 +50,8 @@ func main() {
 	for _, card := range remainingArsenal {
 		fmt.Println(card)
 	}
+
+	router := gin.Default()
+
+	router.Run(apiURI)
 }
