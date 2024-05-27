@@ -109,5 +109,6 @@ type Enforcer struct {
 	Name           string
 	HandSize       int
 	SuperStarValue int
+	DrawSize       int
 	CardText       string
 }
