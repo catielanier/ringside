@@ -1,10 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"github.com/catielanier/ringside/cards"
+	"github.com/catielanier/ringside/cards/global"
+)
 
 func main() {
 	deck := deck{
-		Superstar: superstar{
+		Superstar: cards.Superstar{
 			Name:               "Mankind",
 			IsRevolution:       false,
 			HandSize:           2,
@@ -13,16 +17,16 @@ func main() {
 			BacklashLimit:      20,
 			BackstageLimit:     99,
 			DrawSize:           2,
-			Alignment:          Any,
-			SecondaryAlignment: SecondaryAny,
+			Alignment:          global.Any,
+			SecondaryAlignment: global.SecondaryAny,
 			NonUniqueLimit:     3,
 			UniqueLimit:        1,
 			EugeneMode:         false,
 			CardText:           "You must always draw 2 cards, if possible, during your draw segment. All damage from opponent is at -1D",
 		},
-		BackstageArea: backstageArea{},
-		BacklashDeck:  backlashDeck{},
-		Arsenal:       newArsenal(),
+		BackstageArea: []cards.Backstage{},
+		BacklashDeck:  []cards.Backlash{},
+		Arsenal:       []cards.Arsenal{},
 		DeckType:      Virtual,
 	}
 	deck.Arsenal.shuffle()

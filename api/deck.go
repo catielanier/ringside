@@ -6,11 +6,7 @@ import (
 	"math/rand"
 )
 
-type backstageArea []string
-
-type backlashDeck []string
-
-type arsenal []string
+type arsenal []cards.ArsenalCard
 
 type deckType int
 
@@ -22,14 +18,14 @@ const (
 
 type deck struct {
 	Superstar     cards.Superstar
-	BackstageArea backstageArea
-	BacklashDeck  backlashDeck
+	BackstageArea []cards.Backstage
+	BacklashDeck  []cards.Backlash
 	Arsenal       arsenal
 	DeckType      deckType
 }
 
 func newArsenal() arsenal {
-	return arsenal{"Escape Move", "Step Aside", "Right Cross Punch", "Volley This!", "Reach for the Ropes", "There Are Two Things You Can Do: Nothing and Like It"}
+	return arsenal{}
 }
 
 func (a arsenal) print() {

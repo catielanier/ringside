@@ -25,7 +25,7 @@ type Superstar = struct {
 	CardText           string
 }
 
-type Arsenal struct {
+type ArsenalCard struct {
 	Title                    string
 	IsRevolution             bool
 	IsThrowback              bool
