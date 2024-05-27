@@ -1,9 +1,9 @@
-package main
+package maneuver
 
-type maneuverCardType int
+type ManeuverCardType int
 
 const (
-	Strike maneuverCardType = iota
+	Strike ManeuverCardType = iota
 	Grapple
 	Submission
 	HighRisk
@@ -14,10 +14,10 @@ const (
 	NonManeuver
 )
 
-type maneuverSubType int
+type ManeuverSubType int
 
 const (
-	Core maneuverCardType = iota
+	Core ManeuverCardType = iota
 	Mean
 	Colossal
 	NonRevolution
