@@ -11,6 +11,11 @@ type Superstar = struct {
 	Name               string
 	IsRevolution       bool
 	CanPackEnforcer    bool
+	IsFemale           bool
+	IsDiva             bool
+	IsLegend           bool
+	IsNXT              bool
+	IsTagTeam          bool
 	HandSize           int
 	SuperStarValue     int
 	ArsenalLimit       int
@@ -39,6 +44,11 @@ type ArsenalCard struct {
 	IsActive                 bool
 	IsBash                   bool
 	IsSetUp                  bool
+	IsDivaOnly               bool
+	IsFemaleOnly             bool
+	IsNXTLogo                bool
+	IsLegendOnly             bool
+	IsTagTeamOnly            bool
 	Brand                    global.Brand
 	Alignment                global.Alignment
 	SecondaryAlignment       global.SecondaryAlignment
@@ -72,6 +82,11 @@ type Backlash struct {
 	IsActive                 bool
 	IsBash                   bool
 	IsSetUp                  bool
+	IsDivaOnly               bool
+	IsFemaleOnly             bool
+	IsNXTLogo                bool
+	IsLegendOnly             bool
+	IsTagTeamOnly            bool
 	Brand                    global.Brand
 	Alignment                global.Alignment
 	SecondaryAlignment       global.SecondaryAlignment
