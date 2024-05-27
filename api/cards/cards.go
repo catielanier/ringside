@@ -88,3 +88,22 @@ type Backlash struct {
 	Damage                   int
 	CardText                 string
 }
+
+type Backstage struct {
+	Title              string
+	IsEnforcer         bool
+	IsObject           bool
+	IsHideable         bool
+	Brand              global.Brand
+	Enforcer           []Enforcer
+	Alignment          global.Alignment
+	SecondaryAlignment global.SecondaryAlignment
+	CardText           string
+}
+
+type Enforcer struct {
+	Name           string
+	HandSize       int
+	SuperStarValue int
+	CardText       string
+}
