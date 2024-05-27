@@ -23,6 +23,7 @@ type Superstar = struct {
 	NonUniqueLimit     int
 	UniqueLimit        int
 	CardText           string
+	ImageURL           string
 }
 
 type ArsenalCard struct {
@@ -54,6 +55,7 @@ type ArsenalCard struct {
 	Fortitude                int
 	Damage                   int
 	CardText                 string
+	ImageURL                 string
 }
 
 type Backlash struct {
@@ -87,6 +89,7 @@ type Backlash struct {
 	Fortitude                int
 	Damage                   int
 	CardText                 string
+	ImageURL                 string
 }
 
 type Backstage struct {
@@ -99,6 +102,7 @@ type Backstage struct {
 	Alignment          global.Alignment
 	SecondaryAlignment global.SecondaryAlignment
 	CardText           string
+	ImageURL           string
 }
 
 type Enforcer struct {
