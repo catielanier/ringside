@@ -29,6 +29,7 @@ type Superstar = struct {
 	EugeneMode         bool                      `json:"eugeneMode,omitempty" bson:"eugeneMode,omitempty"`
 	NonUniqueLimit     int                       `json:"nonUniqueLimit,omitempty" bson:"nonUniqueLimit,omitempty"`
 	UniqueLimit        int                       `json:"uniqueLimit,omitempty" bson:"uniqueLimit,omitempty"`
+	Set                string                    `json:"set,omitempty" bson:"set,omitempty"`
 	CardText           string                    `json:"cardText,omitempty" bson:"cardText,omitempty"`
 	ImageURL           string                    `json:"imageUrl,omitempty" bson:"imageUrl,omitempty"`
 }
@@ -70,6 +71,7 @@ type ArsenalCard struct {
 	Fortitude                int                         `json:"fortitude,omitempty" bson:"fortitude,omitempty"`
 	Damage                   int                         `json:"damage,omitempty" bson:"damage,omitempty"`
 	CardText                 string                      `json:"cardText,omitempty" bson:"cardText,omitempty"`
+	Set                      string                      `json:"set,omitempty" bson:"set,omitempty"`
 	ImageURL                 string                      `json:"imageUrl,omitempty" bson:"imageUrl,omitempty"`
 }
 
@@ -111,6 +113,7 @@ type Backlash struct {
 	ReversalType             []reversal.ReversalType     `json:"reversalType,omitempty" bson:"reversalType,omitempty"`
 	Fortitude                int                         `json:"fortitude,omitempty" bson:"fortitude,omitempty"`
 	Damage                   int                         `json:"damage,omitempty" bson:"damage,omitempty"`
+	Set                      string                      `json:"set,omitempty" bson:"set,omitempty"`
 	CardText                 string                      `json:"cardText,omitempty" bson:"cardText,omitempty"`
 	ImageURL                 string                      `json:"imageUrl,omitempty" bson:"imageUrl,omitempty"`
 }
@@ -128,6 +131,7 @@ type Backstage struct {
 	SuperstarSpecific        string                    `json:"superstarSpecific,omitempty" bson:"superstarSpecific,omitempty"`
 	SuperstarsSpecificTo     []primitive.ObjectID      `json:"superstarsSpecificTo,omitempty" bson:"superstarsSpecificTo,omitempty"`
 	HideCardsUnderneathValue int                       `json:"hideCardsUnderneathValue,omitempty" bson:"hideCardsUnderneathValue,omitempty"`
+	Set                      string                    `json:"set,omitempty" bson:"set,omitempty"`
 	CardText                 string                    `json:"cardText,omitempty" bson:"cardText,omitempty"`
 	ImageURL                 string                    `json:"imageUrl,omitempty" bson:"imageUrl,omitempty"`
 }
