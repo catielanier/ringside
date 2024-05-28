@@ -9,29 +9,31 @@ import (
 )
 
 type Superstar = struct {
-	Id                 primitive.ObjectID        `json:"_id,omitempty" bson:"_id,omitempty"`
-	Name               string                    `json:"name,omitempty" bson:"name,omitempty"`
-	IsRevolution       bool                      `json:"isRevolution,omitempty" bson:"isRevolution,omitempty"`
-	CanPackEnforcer    bool                      `json:"canPackEnforcer,omitempty" bson:"canPackEnforcer,omitempty"`
-	IsFemale           bool                      `json:"isFemale,omitempty" bson:"isFemale,omitempty"`
-	IsDiva             bool                      `json:"isDiva,omitempty" bson:"isDiva,omitempty"`
-	IsLegend           bool                      `json:"isLegend,omitempty" bson:"isLegend,omitempty"`
-	IsNXT              bool                      `json:"isNxt,omitempty" bson:"isNxt,omitempty"`
-	IsTagTeam          bool                      `json:"isTagTeam,omitempty" bson:"isTagTeam,omitempty"`
-	HandSize           int                       `json:"handSize,omitempty" bson:"handSize,omitempty"`
-	SuperStarValue     int                       `json:"superStarValue,omitempty" bson:"superStarValue,omitempty"`
-	ArsenalLimit       int                       `json:"arsenalLimit,omitempty" bson:"arsenalLimit,omitempty"`
-	BacklashLimit      int                       `json:"backlashLimit,omitempty" bson:"backlashLimit,omitempty"`
-	BackstageLimit     int                       `json:"backstageLimit,omitempty" bson:"backstageLimit,omitempty"`
-	DrawSize           int                       `json:"drawSize,omitempty" bson:"drawSize,omitempty"`
-	Alignment          global.Alignment          `json:"alignment,omitempty" bson:"alignment,omitempty"`
-	SecondaryAlignment global.SecondaryAlignment `json:"secondaryAlignment,omitempty" bson:"secondaryAlignment,omitempty"`
-	EugeneMode         bool                      `json:"eugeneMode,omitempty" bson:"eugeneMode,omitempty"`
-	NonUniqueLimit     int                       `json:"nonUniqueLimit,omitempty" bson:"nonUniqueLimit,omitempty"`
-	UniqueLimit        int                       `json:"uniqueLimit,omitempty" bson:"uniqueLimit,omitempty"`
-	Set                string                    `json:"set,omitempty" bson:"set,omitempty"`
-	CardText           string                    `json:"cardText,omitempty" bson:"cardText,omitempty"`
-	ImageURL           string                    `json:"imageUrl,omitempty" bson:"imageUrl,omitempty"`
+	Id                            primitive.ObjectID        `json:"_id,omitempty" bson:"_id,omitempty"`
+	Name                          string                    `json:"name,omitempty" bson:"name,omitempty"`
+	IsRevolution                  bool                      `json:"isRevolution,omitempty" bson:"isRevolution,omitempty"`
+	CanPackEnforcer               bool                      `json:"canPackEnforcer,omitempty" bson:"canPackEnforcer,omitempty"`
+	IsFemale                      bool                      `json:"isFemale,omitempty" bson:"isFemale,omitempty"`
+	IsDiva                        bool                      `json:"isDiva,omitempty" bson:"isDiva,omitempty"`
+	IsLegend                      bool                      `json:"isLegend,omitempty" bson:"isLegend,omitempty"`
+	IsNXT                         bool                      `json:"isNxt,omitempty" bson:"isNxt,omitempty"`
+	IsTagTeam                     bool                      `json:"isTagTeam,omitempty" bson:"isTagTeam,omitempty"`
+	HandSize                      int                       `json:"handSize,omitempty" bson:"handSize,omitempty"`
+	SuperStarValue                int                       `json:"superStarValue,omitempty" bson:"superStarValue,omitempty"`
+	ArsenalLimit                  int                       `json:"arsenalLimit,omitempty" bson:"arsenalLimit,omitempty"`
+	BacklashLimit                 int                       `json:"backlashLimit,omitempty" bson:"backlashLimit,omitempty"`
+	BackstageLimit                int                       `json:"backstageLimit,omitempty" bson:"backstageLimit,omitempty"`
+	DrawSize                      int                       `json:"drawSize,omitempty" bson:"drawSize,omitempty"`
+	Alignment                     global.Alignment          `json:"alignment,omitempty" bson:"alignment,omitempty"`
+	SecondaryAlignment            global.SecondaryAlignment `json:"secondaryAlignment,omitempty" bson:"secondaryAlignment,omitempty"`
+	EugeneMode                    bool                      `json:"eugeneMode,omitempty" bson:"eugeneMode,omitempty"`
+	CanAlsoPackSuperstarSpecifics []primitive.ObjectID      `json:"canAlsoPackSuperstarSpecifics,omitempty" bson:"canAlsoPackSuperstarSpecifics,omitempty"`
+	CanBeBackstage                bool                      `json:"canBeBackstage,omitempty" bson:"canBeBackstage,omitempty"`
+	NonUniqueLimit                int                       `json:"nonUniqueLimit,omitempty" bson:"nonUniqueLimit,omitempty"`
+	UniqueLimit                   int                       `json:"uniqueLimit,omitempty" bson:"uniqueLimit,omitempty"`
+	Set                           string                    `json:"set,omitempty" bson:"set,omitempty"`
+	CardText                      string                    `json:"cardText,omitempty" bson:"cardText,omitempty"`
+	ImageURL                      string                    `json:"imageUrl,omitempty" bson:"imageUrl,omitempty"`
 }
 
 type ArsenalCard struct {

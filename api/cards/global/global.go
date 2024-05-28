@@ -10,6 +10,7 @@ const (
 	Face
 	Neutral
 	Any
+	Both
 )
 
 const (
@@ -17,6 +18,7 @@ const (
 	FanFavorite
 	SecondaryNeutral
 	SecondaryAny
+	SecondaryBoth
 )
 
 const (
