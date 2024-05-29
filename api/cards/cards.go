@@ -51,6 +51,7 @@ type ArsenalCard struct {
 	IsActive                 bool                        `json:"isActive,omitempty" bson:"isActive,omitempty"`
 	IsBash                   bool                        `json:"isBash,omitempty" bson:"isBash,omitempty"`
 	IsSetUp                  bool                        `json:"isSetUp,omitempty" bson:"isSetUp,omitempty"`
+	IsRunIn                  bool                        `json:"isRunIn,omitempty" bson:"isRunIn,omitempty"`
 	IsDivaOnly               bool                        `json:"isDivaOnly,omitempty" bson:"isDivaOnly,omitempty"`
 	IsFemaleOnly             bool                        `json:"isFemaleOnly,omitempty" bson:"isFemaleOnly,omitempty"`
 	IsNXTLogo                bool                        `json:"isNxtLogo,omitempty" bson:"isNxtLogo,omitempty"`
@@ -94,6 +95,7 @@ type Backlash struct {
 	IsActive                 bool                        `json:"isActive,omitempty" bson:"isActive,omitempty"`
 	IsBash                   bool                        `json:"isBash,omitempty" bson:"isBash,omitempty"`
 	IsSetUp                  bool                        `json:"isSetUp,omitempty" bson:"isSetUp,omitempty"`
+	IsRunIn                  bool                        `json:"isRunIn,omitempty" bson:"isRunIn,omitempty"`
 	IsDivaOnly               bool                        `json:"isDivaOnly,omitempty" bson:"isDivaOnly,omitempty"`
 	IsFemaleOnly             bool                        `json:"isFemaleOnly,omitempty" bson:"isFemaleOnly,omitempty"`
 	IsNXTLogo                bool                        `json:"isNxtLogo,omitempty" bson:"isNxtLogo,omitempty"`
