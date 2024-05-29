@@ -76,6 +76,7 @@ type ArsenalCard struct {
 	Fortitude                int                         `json:"fortitude,omitempty" bson:"fortitude,omitempty"`
 	Damage                   int                         `json:"damage,omitempty" bson:"damage,omitempty"`
 	CardText                 string                      `json:"cardText,omitempty" bson:"cardText,omitempty"`
+	Quote                    string                      `json:"quote,omitempty" bson:"quote,omitempty"`
 	Set                      []string                    `json:"set,omitempty" bson:"set,omitempty"`
 	ImageURL                 []string                    `json:"imageUrl,omitempty" bson:"imageUrl,omitempty"`
 }
@@ -122,6 +123,7 @@ type Backlash struct {
 	Damage                   int                         `json:"damage,omitempty" bson:"damage,omitempty"`
 	Set                      []string                    `json:"set,omitempty" bson:"set,omitempty"`
 	CardText                 string                      `json:"cardText,omitempty" bson:"cardText,omitempty"`
+	Quote                    string                      `json:"quote,omitempty" bson:"quote,omitempty"`
 	ImageURL                 []string                    `json:"imageUrl,omitempty" bson:"imageUrl,omitempty"`
 }
 
