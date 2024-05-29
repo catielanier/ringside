@@ -17,6 +17,7 @@ type Superstar = struct {
 	IsDiva                        bool                      `json:"isDiva,omitempty" bson:"isDiva,omitempty"`
 	IsLegend                      bool                      `json:"isLegend,omitempty" bson:"isLegend,omitempty"`
 	IsNXT                         bool                      `json:"isNxt,omitempty" bson:"isNxt,omitempty"`
+	IsNWO                         bool                      `json:"isNwo,omitempty" bson:"isNwo,omitempty"`
 	IsTagTeam                     bool                      `json:"isTagTeam,omitempty" bson:"isTagTeam,omitempty"`
 	HandSize                      int                       `json:"handSize,omitempty" bson:"handSize,omitempty"`
 	SuperStarValue                int                       `json:"superStarValue,omitempty" bson:"superStarValue,omitempty"`
@@ -53,6 +54,7 @@ type ArsenalCard struct {
 	IsDivaOnly               bool                        `json:"isDivaOnly,omitempty" bson:"isDivaOnly,omitempty"`
 	IsFemaleOnly             bool                        `json:"isFemaleOnly,omitempty" bson:"isFemaleOnly,omitempty"`
 	IsNXTLogo                bool                        `json:"isNxtLogo,omitempty" bson:"isNxtLogo,omitempty"`
+	IsNWOLogo                bool                        `json:"isNwoLogo,omitempty" bson:"isNwoLogo,omitempty"`
 	IsLegendOnly             bool                        `json:"isLegendOnly,omitempty" bson:"isLegendOnly,omitempty"`
 	IsTagTeamOnly            bool                        `json:"isTagTeamOnly,omitempty" bson:"isTagTeamOnly,omitempty"`
 	Brand                    global.Brand                `json:"brand,omitempty" bson:"brand,omitempty"`
@@ -95,6 +97,7 @@ type Backlash struct {
 	IsDivaOnly               bool                        `json:"isDivaOnly,omitempty" bson:"isDivaOnly,omitempty"`
 	IsFemaleOnly             bool                        `json:"isFemaleOnly,omitempty" bson:"isFemaleOnly,omitempty"`
 	IsNXTLogo                bool                        `json:"isNxtLogo,omitempty" bson:"isNxtLogo,omitempty"`
+	IsNWOLogo                bool                        `json:"isNwoLogo,omitempty" bson:"isNwoLogo,omitempty"`
 	IsLegendOnly             bool                        `json:"isLegendOnly,omitempty" bson:"isLegendOnly,omitempty"`
 	IsTagTeamOnly            bool                        `json:"isTagTeamOnly,omitempty" bson:"isTagTeamOnly,omitempty"`
 	Brand                    global.Brand                `json:"brand,omitempty" bson:"brand,omitempty"`
