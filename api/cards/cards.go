@@ -64,7 +64,6 @@ type ArsenalCard struct {
 	HideCardsUnderneathValue int                         `json:"hideCardsUnderneathValue,omitempty" bson:"hideCardsUnderneathValue,omitempty"`
 	Alignment                global.Alignment            `json:"alignment,omitempty" bson:"alignment,omitempty"`
 	SecondaryAlignment       global.SecondaryAlignment   `json:"secondaryAlignment,omitempty" bson:"secondaryAlignment,omitempty"`
-	SuperstarSpecific        string                      `json:"superstarSpecific,omitempty" bson:"superstarSpecific,omitempty"`
 	SuperstarsSpecificTo     []primitive.ObjectID        `json:"superstarsSpecificTo,omitempty" bson:"superstarsSpecificTo,omitempty"`
 	Volley                   int                         `json:"volley,omitempty" bson:"volley,omitempty"`
 	StunValue                int                         `json:"stunValue,omitempty" bson:"stunValue,omitempty"`
@@ -108,7 +107,6 @@ type Backlash struct {
 	Brand                    global.Brand                `json:"brand,omitempty" bson:"brand,omitempty"`
 	Alignment                global.Alignment            `json:"alignment,omitempty" bson:"alignment,omitempty"`
 	SecondaryAlignment       global.SecondaryAlignment   `json:"secondaryAlignment,omitempty" bson:"secondaryAlignment,omitempty"`
-	SuperstarSpecific        string                      `json:"superstarSpecific,omitempty" bson:"superstarSpecific,omitempty"`
 	SuperstarsSpecificTo     []primitive.ObjectID        `json:"superstarsSpecificTo,omitempty" bson:"superstarsSpecificTo,omitempty"`
 	Volley                   int                         `json:"volley,omitempty" bson:"volley,omitempty"`
 	StunValue                int                         `json:"stunValue,omitempty" bson:"stunValue,omitempty"`
@@ -139,7 +137,6 @@ type Backstage struct {
 	Enforcer                 []Enforcer                `json:"enforcer,omitempty" bson:"enforcer,omitempty"`
 	Alignment                global.Alignment          `json:"alignment,omitempty" bson:"alignment,omitempty"`
 	SecondaryAlignment       global.SecondaryAlignment `json:"secondaryAlignment,omitempty" bson:"secondaryAlignment,omitempty"`
-	SuperstarSpecific        string                    `json:"superstarSpecific,omitempty" bson:"superstarSpecific,omitempty"`
 	SuperstarsSpecificTo     []primitive.ObjectID      `json:"superstarsSpecificTo,omitempty" bson:"superstarsSpecificTo,omitempty"`
 	HideCardsUnderneathValue int                       `json:"hideCardsUnderneathValue,omitempty" bson:"hideCardsUnderneathValue,omitempty"`
 	Set                      []string                  `json:"set,omitempty" bson:"set,omitempty"`
