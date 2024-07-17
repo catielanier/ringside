@@ -20,7 +20,7 @@ type Superstar = struct {
 	IsNWO                         bool                      `json:"isNwo,omitempty" bson:"isNwo,omitempty"`
 	IsTagTeam                     bool                      `json:"isTagTeam,omitempty" bson:"isTagTeam,omitempty"`
 	Brand                         global.Brand              `json:"brand,omitempty" bson:"brand,omitempty"`
-	isGM                          bool                      `json:"isGM,omitempty" bson:"isGM,omitempty"`
+	IsGM                          bool                      `json:"isGM,omitempty" bson:"isGM,omitempty"`
 	HandSize                      int                       `json:"handSize,omitempty" bson:"handSize,omitempty"`
 	SuperStarValue                int                       `json:"superStarValue,omitempty" bson:"superStarValue,omitempty"`
 	ArsenalLimit                  int                       `json:"arsenalLimit,omitempty" bson:"arsenalLimit,omitempty"`
