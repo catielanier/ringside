@@ -11,6 +11,8 @@ const (
 	Hold
 	Throw
 	Extreme
+	TrademarkFinisher
+	Trademark
 	NonManeuver
 )
 
